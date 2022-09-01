@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.informationetudiantController">
+   <children>
+      <AnchorPane layoutX="35.0" prefHeight="475.0" prefWidth="780.0">
+         <children>
+            <Label layoutX="173.0" layoutY="80.0" prefHeight="46.0" prefWidth="517.0" text="Université Euromeditéranéenne de Fès" textFill="RED" textOverrun="CLIP">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="79.0" fitWidth="180.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../photos/Png.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="119.0" fitWidth="221.0" layoutX="572.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../photos/uemf-logo.png" />
+               </image>
+            </ImageView>
+            <Line endX="245.0" layoutX="466.0" layoutY="172.0" startX="-149.0" />
+            <Line endX="245.0" endY="-7.0" layoutX="477.0" layoutY="181.0" startX="245.0" startY="208.0" />
+            <Line endX="245.0" endY="-7.0" layoutX="-202.0" layoutY="181.0" startX="245.0" startY="208.0" />
+            <Label alignment="CENTER" layoutX="51.0" layoutY="158.0" prefHeight="26.0" prefWidth="259.0" text="Information" textFill="RED">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <FlowPane layoutX="16.0" layoutY="-86.0" prefHeight="200.0" prefWidth="200.0" />
+            <JFXButton layoutX="483.0" layoutY="429.0" onAction="#saisir" prefHeight="32.0" prefWidth="200.0" style="-fx-background-color: #FF4B4B; -fx-background-radius: 50;" text="Valider" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font></JFXButton>
+            <JFXTextField fx:id="id" alignment="CENTER" layoutX="154.0" layoutY="194.0" prefHeight="26.0" prefWidth="200.0" promptText="Identifiant">
+               <font>
+                  <Font size="15.0" />
+               </font></JFXTextField>
+            <JFXTextField fx:id="validation" alignment="CENTER" layoutX="414.0" layoutY="194.0" prefHeight="26.0" prefWidth="200.0" promptText="Validation / Rattrapage">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXTextField>
+            <TableView fx:id="affichervalidation" layoutX="61.0" layoutY="239.0" prefHeight="187.0" prefWidth="638.0">
+              <columns>
+                <TableColumn fx:id="ids" prefWidth="46.0" text="Id" />
+                <TableColumn fx:id="noms" prefWidth="74.0" text="Nom" />
+                  <TableColumn fx:id="prenoms" prefWidth="70.0" text="Prénom" />
+                  <TableColumn fx:id="filieres" prefWidth="88.0" text="Filière" />
+                  <TableColumn fx:id="semestres" prefWidth="88.0" text="Semestre" />
+                  <TableColumn fx:id="presences" text="Présence" />
+                  <TableColumn fx:id="tps" prefWidth="49.0" text="TP" />
+                  <TableColumn fx:id="ecrits" prefWidth="58.0" text="Ecrit" />
+                  <TableColumn fx:id="validations" prefWidth="94.0" text="Validation" />
+              </columns>
+            </TableView>
+            <JFXButton layoutX="266.0" layoutY="429.0" onAction="#imprimer" prefHeight="32.0" prefWidth="200.0" style="-fx-background-color: #FF4B4B; -fx-background-radius: 50;" text="Imprimer" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="87.0" layoutY="429.0" onAction="#retour" prefHeight="32.0" prefWidth="140.0" style="-fx-background-color: #FF4B4B; -fx-background-radius: 50;" text="Retour" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

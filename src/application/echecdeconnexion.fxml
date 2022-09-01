@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="423.0" prefWidth="653.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.echecdeconnexionController">
+   <children>
+      <AnchorPane layoutX="35.0" prefHeight="475.0" prefWidth="780.0">
+         <children>
+            <Label layoutX="173.0" layoutY="80.0" prefHeight="46.0" prefWidth="517.0" text="Université Euromeditéranéenne de Fès" textFill="RED" textOverrun="CLIP">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="79.0" fitWidth="180.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../photos/Png.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="119.0" fitWidth="221.0" layoutX="572.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../photos/uemf-logo.png" />
+               </image>
+            </ImageView>
+            <Line endX="245.0" layoutX="467.0" layoutY="171.0" startX="-149.0" />
+            <Line endX="294.0" layoutX="427.0" layoutY="396.0" startX="-382.0" />
+            <Line endX="245.0" endY="-7.0" layoutX="477.0" layoutY="181.0" startX="245.0" startY="208.0" />
+            <Line endX="245.0" endY="-7.0" layoutX="-202.0" layoutY="181.0" startX="245.0" startY="208.0" />
+            <Label layoutX="74.0" layoutY="158.0" prefHeight="26.0" prefWidth="259.0" text="ECHEC DE CONNEXION" textFill="RED">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <FlowPane layoutX="16.0" layoutY="-86.0" prefHeight="200.0" prefWidth="200.0" />
+            <Label alignment="CENTER" layoutX="164.0" layoutY="222.0" text="Votre identifiant ou votre mot de passe est erroné !">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="54.0" layoutY="163.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../photos/Pngtreegray%20exclamation%20mark%20free%20illustration_4667812.png" />
+               </image>
+            </ImageView>
+            <JFXButton alignment="CENTER" layoutX="290.0" layoutY="294.0" onAction="#retour" prefHeight="31.0" prefWidth="200.0" style="-fx-background-color: #FF4B4B; -fx-background-radius: 50;" text="Retour à l'accueil" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
